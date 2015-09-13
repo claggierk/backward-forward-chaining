@@ -1,0 +1,80 @@
+IF Low_Blood_Pressure & Holes_In_The_Skin
+THEN Altered_PH
+
+IF Altered_PH & Coughing & Wheezing
+THEN Poison = Ammonium_Hydroxide
+
+IF Altered_PH & Coughing & !Wheezing & VomitBlood & BloodyStool
+THEN Poison = Sodium_Phosphate
+
+IF Altered_PH & !Coughing & VomitBlood & Sneezing
+THEN Poison = Sodium_Hydroxide
+
+IF Altered_PH & !Coughing & VomitBlood & !Sneezing & Edema
+THEN Poison = Chlorine
+	
+IF Low_Blood_Pressure & !Holes_In_The_Skin & Difficulty_Breathing & Shortness_Of_Breath & Drowsy
+THEN Poison = Acetone
+
+IF Low_Blood_Pressure & !Holes_In_The_Skin & Difficulty_Breathing & Shortness_Of_Breath & !Drowsy & BlueLipsFingernails & Drooling
+THEN Poison = Sulfuric_Acid
+
+IF Low_Blood_Pressure & !Holes_In_The_Skin & Difficulty_Breathing & !Shortness_Of_Breath & EyeIrritation
+THEN Poison = Sodium_Carbonate
+
+IF Low_Blood_Pressure & !Holes_In_The_Skin & !Difficulty_Breathing & Blisters & Fever
+THEN Poison = Sodium_Borate
+
+IF Low_Blood_Pressure & !Holes_In_The_Skin & !Difficulty_Breathing & Blisters & !Fever & IrritatedBurnedSkin
+THEN Poison = Sodium_Hypochlorite
+
+IF Low_Blood_Pressure & !Holes_In_The_Skin & !Difficulty_Breathing & !Blisters & Peeling
+THEN Poison = Ultraviolet_Radiation
+
+IF !Low_Blood_Pressure & Vomiting_(NonBlood) & BiteSting
+THEN Animal_Bite/Sting
+
+IF Animal_Bite/Sting & Collapse & Sweating
+THEN Poison = Sting_Ray
+
+IF Animal_Bite/Sting & Collapse & !Sweating & Diarrhea
+THEN Poison = Pufferfish
+
+IF Animal_Bite/Sting & !Collapse & Numbness
+THEN Poison = Snake
+
+IF Animal_Bite/Sting & !Collapse & !Numbness & RapidHeartRate
+THEN Poison = Spider
+
+IF !BiteSting & Anemia
+THEN Metal/Metaloid
+
+IF Metal/Metaloid & Constipation
+THEN Poison = Lead
+
+IF Metal/Metaloid & !Constipation & YellowSkin
+THEN Poison = Copper
+
+IF Metal/Metaloid & !Constipation & !YellowSkin & ThickenedSkin
+THEN Poison = Arsenic
+
+IF !Low_Blood_Pressure & !Vomiting_(NonBlood) & !BiteSting & !Anemia & BlueLipsFingernails & LipsSwelling
+THEN Poison = Ammonia
+
+IF !BiteSting & !Anemia & !BlueLipsFingernails & NonLinearRash & SlowedBreathing
+THEN Poison = Para_Aminobenzoic
+
+IF !Low_Blood_Pressure & !Vomiting_(NonBlood) & Altered_Heart_Rate & PinkCherryRedSkin
+THEN Poison = Cyanide
+
+IF !Low_Blood_Pressure & !Vomiting_(NonBlood) & !Altered_Heart_Rate
+THEN Poisonous_Plant
+
+IF Poisonous_Plant & Linear_Red_Rash & Skin_Irritated_Swelling
+THEN Poison = Poison_Oak
+
+IF Poisonous_Plant & !Linear_Red_Rash & Light_Red_Patches
+THEN Poison = Poison_Ivy
+
+IF Poisonous_Plant & !Linear_Red_Rash & !Light_Red_Patches & Large_Fluid_Filled_Blisters
+THEN Poison = Poison_Sumac
