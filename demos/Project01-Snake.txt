@@ -1,0 +1,1139 @@
+
+
+
+***********************************
+***** Processing BC-Rules.txt *****
+***********************************
+Extracted 42 "IF" variables. (variables)
+Extracted 27 "THEN" variables. (conclusions)
+
+ ----- INFO: variable list and conclusion list have Altered_PH in common.
+             Removing from the variable list
+ ----- INFO: variable list and conclusion list have Animal_Bite/Sting in common.
+             Removing from the variable list
+ ----- INFO: variable list and conclusion list have Metal/Metaloid in common.
+             Removing from the variable list
+ ----- INFO: variable list and conclusion list have Poisonous_Plant in common.
+             Removing from the variable list
+
+Variable List:
+1 Low_Blood_Pressure
+2 Holes_In_The_Skin
+3 Coughing
+4 Wheezing
+5 VomitBlood
+6 BloodyStool
+7 Sneezing
+8 Edema
+9 Difficulty_Breathing
+10 Shortness_Of_Breath
+11 Drowsy
+12 BlueLipsFingernails
+13 Drooling
+14 EyeIrritation
+15 Blisters
+16 Fever
+17 IrritatedBurnedSkin
+18 Peeling
+19 Vomiting_(NonBlood)
+20 BiteSting
+21 Collapse
+22 Sweating
+23 Diarrhea
+24 Numbness
+25 RapidHeartRate
+26 Anemia
+27 Constipation
+28 YellowSkin
+29 ThickenedSkin
+30 LipsSwelling
+31 NonLinearRash
+32 SlowedBreathing
+33 Altered_Heart_Rate
+34 PinkCherryRedSkin
+35 Linear_Red_Rash
+36 Skin_Irritated_Swelling
+37 Light_Red_Patches
+38 Large_Fluid_Filled_Blisters
+
+
+Conclusion List:
+1 Altered_PH
+2 Ammonium_Hydroxide
+3 Sodium_Phosphate
+4 Sodium_Hydroxide
+5 Chlorine
+6 Acetone
+7 Sulfuric_Acid
+8 Sodium_Carbonate
+9 Sodium_Borate
+10 Sodium_Hypochlorite
+11 Ultraviolet_Radiation
+12 Animal_Bite/Sting
+13 Sting_Ray
+14 Pufferfish
+15 Snake
+16 Spider
+17 Metal/Metaloid
+18 Lead
+19 Copper
+20 Arsenic
+21 Ammonia
+22 Para_Aminobenzoic
+23 Cyanide
+24 Poisonous_Plant
+25 Poison_Oak
+26 Poison_Ivy
+27 Poison_Sumac
+
+
+Non Leaf Conclusion List:
+1 Altered_PH
+2 Ammonium_Hydroxide
+3 Sodium_Phosphate
+4 Sodium_Hydroxide
+
+
+Unique Conclusion List:
+1 Altered_PH
+2 Ammonium_Hydroxide
+3 Sodium_Phosphate
+4 Sodium_Hydroxide
+5 Chlorine
+
+
+Poison Conclusion List:
+1 Altered_PH
+2 Ammonium_Hydroxide
+3 Sodium_Phosphate
+4 Sodium_Hydroxide
+5 Chlorine
+6 Acetone
+7 Sulfuric_Acid
+8 Sodium_Carbonate
+9 Sodium_Borate
+10 Sodium_Hypochlorite
+11 Ultraviolet_Radiation
+12 Animal_Bite/Sting
+13 Sting_Ray
+14 Pufferfish
+15 Snake
+16 Spider
+17 Metal/Metaloid
+18 Lead
+19 Copper
+20 Arsenic
+21 Ammonia
+22 Para_Aminobenzoic
+23 Cyanide
+24 Poisonous_Plant
+25 Poison_Oak
+26 Poison_Ivy
+27 Poison_Sumac
+
+Clause 1:Low_Blood_Pressure Holes_In_The_Skin 
+Clause 2:Altered_PH Coughing Wheezing 
+Clause 3:Altered_PH Coughing !Wheezing VomitBlood BloodyStool 
+Clause 4:Altered_PH !Coughing VomitBlood Sneezing 
+Clause 5:Altered_PH !Coughing VomitBlood !Sneezing Edema 
+Clause 6:Low_Blood_Pressure !Holes_In_The_Skin Difficulty_Breathing Shortness_Of_Breath Drowsy 
+Clause 7:Low_Blood_Pressure !Holes_In_The_Skin Difficulty_Breathing Shortness_Of_Breath !Drowsy BlueLipsFingernails Drooling 
+Clause 8:Low_Blood_Pressure !Holes_In_The_Skin Difficulty_Breathing !Shortness_Of_Breath EyeIrritation 
+Clause 9:Low_Blood_Pressure !Holes_In_The_Skin !Difficulty_Breathing Blisters Fever 
+Clause 10:Low_Blood_Pressure !Holes_In_The_Skin !Difficulty_Breathing Blisters !Fever IrritatedBurnedSkin 
+Clause 11:Low_Blood_Pressure !Holes_In_The_Skin !Difficulty_Breathing !Blisters Peeling 
+Clause 12:!Low_Blood_Pressure Vomiting_(NonBlood) BiteSting 
+Clause 13:Animal_Bite/Sting Collapse Sweating 
+Clause 14:Animal_Bite/Sting Collapse !Sweating Diarrhea 
+Clause 15:Animal_Bite/Sting !Collapse Numbness 
+Clause 16:Animal_Bite/Sting !Collapse !Numbness RapidHeartRate 
+Clause 17:!BiteSting Anemia 
+Clause 18:Metal/Metaloid Constipation 
+Clause 19:Metal/Metaloid !Constipation YellowSkin 
+Clause 20:Metal/Metaloid !Constipation !YellowSkin ThickenedSkin 
+Clause 21:!Low_Blood_Pressure !Vomiting_(NonBlood) !BiteSting !Anemia BlueLipsFingernails LipsSwelling 
+Clause 22:!BiteSting !Anemia !BlueLipsFingernails NonLinearRash SlowedBreathing 
+Clause 23:!Low_Blood_Pressure !Vomiting_(NonBlood) Altered_Heart_Rate PinkCherryRedSkin 
+Clause 24:!Low_Blood_Pressure !Vomiting_(NonBlood) !Altered_Heart_Rate 
+Clause 25:Poisonous_Plant Linear_Red_Rash Skin_Irritated_Swelling 
+Clause 26:Poisonous_Plant !Linear_Red_Rash Light_Red_Patches 
+Clause 27:Poisonous_Plant !Linear_Red_Rash !Light_Red_Patches Large_Fluid_Filled_Blisters 
+
+
+Please enter one of the following conclusions as you goal:
+   Altered_PH
+   Poison
+   Animal_Bite/Sting
+   Metal/Metaloid
+   Poisonous_Plant
+Response: 
+  ***** Your choice: Poison
+ ***** Processing: clauseVariableList[Ammonium_Hydroxide][Altered_PH] = -1
+ ----- INFO: Located Altered_PH in the conclusion list. (a non leaf conclusion)
+ ***** Processing: clauseVariableList[Ammonium_Hydroxide][Coughing] = -1
+ ----- INFO: Located Coughing(-1) in the variable list.
+Does the patient have the following symptom?
+   Coughing
+
+  Yes
+  No
+
+Response: 
+
+ You answered: "No"
+ ***** Processing: clauseVariableList[Ammonium_Hydroxide][Wheezing] = -1
+ ----- INFO: Located Wheezing(-1) in the variable list.
+Does the patient have the following symptom?
+   Wheezing
+
+  Yes
+  No
+
+Response: 
+
+ You answered: "No"
+ ***** Processing: clauseVariableList[Altered_PH][Low_Blood_Pressure] = -1
+ ----- INFO: Located Low_Blood_Pressure(-1) in the variable list.
+Does the patient have the following symptom?
+   Low_Blood_Pressure
+
+  Yes
+  No
+
+Response: 
+
+ You answered: "No"
+ ***** Processing: clauseVariableList[Altered_PH][Holes_In_The_Skin] = -1
+ ----- INFO: Located Holes_In_The_Skin(-1) in the variable list.
+Does the patient have the following symptom?
+   Holes_In_The_Skin
+
+  Yes
+  No
+
+Response: 
+
+ You answered: "No"
+Altered_PH: 0
+Coughing: 0
+Wheezing: 0
+
+***** You have NOT been poisoned by: Ammonium_Hydroxide Poison *****
+Searching for next potential poison...
+ ***** Processing: clauseVariableList[Sodium_Phosphate][Altered_PH] = 0
+ ***** Processing: clauseVariableList[Sodium_Phosphate][Coughing] = -1
+ ----- INFO: Located Coughing(0) in the variable list.
+ ----- INFO: Copying from variable list
+ ----- INFO: Current variable has a "!"
+ ***** Processing: clauseVariableList[Sodium_Phosphate][Wheezing] = -1
+ ----- INFO: Located Wheezing(0) in the variable list.
+ ----- INFO: Copying from variable list
+ ***** Processing: clauseVariableList[Sodium_Phosphate][VomitBlood] = -1
+ ----- INFO: Located VomitBlood(-1) in the variable list.
+Does the patient have the following symptom?
+   VomitBlood
+
+  Yes
+  No
+
+Response: 
+
+ You answered: "No"
+ ***** Processing: clauseVariableList[Sodium_Phosphate][BloodyStool] = -1
+ ----- INFO: Located BloodyStool(-1) in the variable list.
+Does the patient have the following symptom?
+   BloodyStool
+
+  Yes
+  No
+
+Response: 
+
+ You answered: "No"
+Altered_PH: 0
+Coughing: 0
+!Wheezing: 1
+VomitBlood: 0
+BloodyStool: 0
+
+***** You have NOT been poisoned by: Sodium_Phosphate Poison *****
+Searching for next potential poison...
+ ***** Processing: clauseVariableList[Sodium_Hydroxide][Altered_PH] = 0
+ ----- INFO: Current variable has a "!"
+ ***** Processing: clauseVariableList[Sodium_Hydroxide][Coughing] = -1
+ ----- INFO: Located Coughing(0) in the variable list.
+ ----- INFO: Copying from variable list
+ ***** Processing: clauseVariableList[Sodium_Hydroxide][VomitBlood] = -1
+ ----- INFO: Located VomitBlood(0) in the variable list.
+ ----- INFO: Copying from variable list
+ ***** Processing: clauseVariableList[Sodium_Hydroxide][Sneezing] = -1
+ ----- INFO: Located Sneezing(-1) in the variable list.
+Does the patient have the following symptom?
+   Sneezing
+
+  Yes
+  No
+
+Response: 
+
+ You answered: "No"
+Altered_PH: 0
+!Coughing: 1
+VomitBlood: 0
+Sneezing: 0
+
+***** You have NOT been poisoned by: Sodium_Hydroxide Poison *****
+Searching for next potential poison...
+ ***** Processing: clauseVariableList[Chlorine][Altered_PH] = 0
+ ----- INFO: Current variable has a "!"
+ ***** Processing: clauseVariableList[Chlorine][Coughing] = -1
+ ----- INFO: Located Coughing(0) in the variable list.
+ ----- INFO: Copying from variable list
+ ***** Processing: clauseVariableList[Chlorine][VomitBlood] = -1
+ ----- INFO: Located VomitBlood(0) in the variable list.
+ ----- INFO: Copying from variable list
+ ----- INFO: Current variable has a "!"
+ ***** Processing: clauseVariableList[Chlorine][Sneezing] = -1
+ ----- INFO: Located Sneezing(0) in the variable list.
+ ----- INFO: Copying from variable list
+ ***** Processing: clauseVariableList[Chlorine][Edema] = -1
+ ----- INFO: Located Edema(-1) in the variable list.
+Does the patient have the following symptom?
+   Edema
+
+  Yes
+  No
+
+Response: 
+
+ You answered: "No"
+Altered_PH: 0
+!Coughing: 1
+VomitBlood: 0
+!Sneezing: 1
+Edema: 0
+
+***** You have NOT been poisoned by: Chlorine Poison *****
+Searching for next potential poison...
+ ***** Processing: clauseVariableList[Acetone][Low_Blood_Pressure] = -1
+ ----- INFO: Located Low_Blood_Pressure(0) in the variable list.
+ ----- INFO: Copying from variable list
+ ----- INFO: Current variable has a "!"
+ ***** Processing: clauseVariableList[Acetone][Holes_In_The_Skin] = -1
+ ----- INFO: Located Holes_In_The_Skin(0) in the variable list.
+ ----- INFO: Copying from variable list
+ ***** Processing: clauseVariableList[Acetone][Difficulty_Breathing] = -1
+ ----- INFO: Located Difficulty_Breathing(-1) in the variable list.
+Does the patient have the following symptom?
+   Difficulty_Breathing
+
+  Yes
+  No
+
+Response: 
+
+ You answered: "No"
+ ***** Processing: clauseVariableList[Acetone][Shortness_Of_Breath] = -1
+ ----- INFO: Located Shortness_Of_Breath(-1) in the variable list.
+Does the patient have the following symptom?
+   Shortness_Of_Breath
+
+  Yes
+  No
+
+Response: 
+
+ You answered: "No"
+ ***** Processing: clauseVariableList[Acetone][Drowsy] = -1
+ ----- INFO: Located Drowsy(-1) in the variable list.
+Does the patient have the following symptom?
+   Drowsy
+
+  Yes
+  No
+
+Response: 
+
+ You answered: "No"
+Low_Blood_Pressure: 0
+!Holes_In_The_Skin: 1
+Difficulty_Breathing: 0
+Shortness_Of_Breath: 0
+Drowsy: 0
+
+***** You have NOT been poisoned by: Acetone Poison *****
+Searching for next potential poison...
+ ***** Processing: clauseVariableList[Sulfuric_Acid][Low_Blood_Pressure] = -1
+ ----- INFO: Located Low_Blood_Pressure(0) in the variable list.
+ ----- INFO: Copying from variable list
+ ----- INFO: Current variable has a "!"
+ ***** Processing: clauseVariableList[Sulfuric_Acid][Holes_In_The_Skin] = -1
+ ----- INFO: Located Holes_In_The_Skin(0) in the variable list.
+ ----- INFO: Copying from variable list
+ ***** Processing: clauseVariableList[Sulfuric_Acid][Difficulty_Breathing] = -1
+ ----- INFO: Located Difficulty_Breathing(0) in the variable list.
+ ----- INFO: Copying from variable list
+ ***** Processing: clauseVariableList[Sulfuric_Acid][Shortness_Of_Breath] = -1
+ ----- INFO: Located Shortness_Of_Breath(0) in the variable list.
+ ----- INFO: Copying from variable list
+ ----- INFO: Current variable has a "!"
+ ***** Processing: clauseVariableList[Sulfuric_Acid][Drowsy] = -1
+ ----- INFO: Located Drowsy(0) in the variable list.
+ ----- INFO: Copying from variable list
+ ***** Processing: clauseVariableList[Sulfuric_Acid][BlueLipsFingernails] = -1
+ ----- INFO: Located BlueLipsFingernails(-1) in the variable list.
+Does the patient have the following symptom?
+   BlueLipsFingernails
+
+  Yes
+  No
+
+Response: 
+
+ You answered: "No"
+ ***** Processing: clauseVariableList[Sulfuric_Acid][Drooling] = -1
+ ----- INFO: Located Drooling(-1) in the variable list.
+Does the patient have the following symptom?
+   Drooling
+
+  Yes
+  No
+
+Response: 
+
+ You answered: "No"
+Low_Blood_Pressure: 0
+!Holes_In_The_Skin: 1
+Difficulty_Breathing: 0
+Shortness_Of_Breath: 0
+!Drowsy: 1
+BlueLipsFingernails: 0
+Drooling: 0
+
+***** You have NOT been poisoned by: Sulfuric_Acid Poison *****
+Searching for next potential poison...
+ ***** Processing: clauseVariableList[Sodium_Carbonate][Low_Blood_Pressure] = -1
+ ----- INFO: Located Low_Blood_Pressure(0) in the variable list.
+ ----- INFO: Copying from variable list
+ ----- INFO: Current variable has a "!"
+ ***** Processing: clauseVariableList[Sodium_Carbonate][Holes_In_The_Skin] = -1
+ ----- INFO: Located Holes_In_The_Skin(0) in the variable list.
+ ----- INFO: Copying from variable list
+ ***** Processing: clauseVariableList[Sodium_Carbonate][Difficulty_Breathing] = -1
+ ----- INFO: Located Difficulty_Breathing(0) in the variable list.
+ ----- INFO: Copying from variable list
+ ----- INFO: Current variable has a "!"
+ ***** Processing: clauseVariableList[Sodium_Carbonate][Shortness_Of_Breath] = -1
+ ----- INFO: Located Shortness_Of_Breath(0) in the variable list.
+ ----- INFO: Copying from variable list
+ ***** Processing: clauseVariableList[Sodium_Carbonate][EyeIrritation] = -1
+ ----- INFO: Located EyeIrritation(-1) in the variable list.
+Does the patient have the following symptom?
+   EyeIrritation
+
+  Yes
+  No
+
+Response: 
+
+ You answered: "No"
+Low_Blood_Pressure: 0
+!Holes_In_The_Skin: 1
+Difficulty_Breathing: 0
+!Shortness_Of_Breath: 1
+EyeIrritation: 0
+
+***** You have NOT been poisoned by: Sodium_Carbonate Poison *****
+Searching for next potential poison...
+ ***** Processing: clauseVariableList[Sodium_Borate][Low_Blood_Pressure] = -1
+ ----- INFO: Located Low_Blood_Pressure(0) in the variable list.
+ ----- INFO: Copying from variable list
+ ----- INFO: Current variable has a "!"
+ ***** Processing: clauseVariableList[Sodium_Borate][Holes_In_The_Skin] = -1
+ ----- INFO: Located Holes_In_The_Skin(0) in the variable list.
+ ----- INFO: Copying from variable list
+ ----- INFO: Current variable has a "!"
+ ***** Processing: clauseVariableList[Sodium_Borate][Difficulty_Breathing] = -1
+ ----- INFO: Located Difficulty_Breathing(0) in the variable list.
+ ----- INFO: Copying from variable list
+ ***** Processing: clauseVariableList[Sodium_Borate][Blisters] = -1
+ ----- INFO: Located Blisters(-1) in the variable list.
+Does the patient have the following symptom?
+   Blisters
+
+  Yes
+  No
+
+Response: 
+
+ You answered: "No"
+ ***** Processing: clauseVariableList[Sodium_Borate][Fever] = -1
+ ----- INFO: Located Fever(-1) in the variable list.
+Does the patient have the following symptom?
+   Fever
+
+  Yes
+  No
+
+Response: 
+
+ You answered: "No"
+Low_Blood_Pressure: 0
+!Holes_In_The_Skin: 1
+!Difficulty_Breathing: 1
+Blisters: 0
+Fever: 0
+
+***** You have NOT been poisoned by: Sodium_Borate Poison *****
+Searching for next potential poison...
+ ***** Processing: clauseVariableList[Sodium_Hypochlorite][Low_Blood_Pressure] = -1
+ ----- INFO: Located Low_Blood_Pressure(0) in the variable list.
+ ----- INFO: Copying from variable list
+ ----- INFO: Current variable has a "!"
+ ***** Processing: clauseVariableList[Sodium_Hypochlorite][Holes_In_The_Skin] = -1
+ ----- INFO: Located Holes_In_The_Skin(0) in the variable list.
+ ----- INFO: Copying from variable list
+ ----- INFO: Current variable has a "!"
+ ***** Processing: clauseVariableList[Sodium_Hypochlorite][Difficulty_Breathing] = -1
+ ----- INFO: Located Difficulty_Breathing(0) in the variable list.
+ ----- INFO: Copying from variable list
+ ***** Processing: clauseVariableList[Sodium_Hypochlorite][Blisters] = -1
+ ----- INFO: Located Blisters(0) in the variable list.
+ ----- INFO: Copying from variable list
+ ----- INFO: Current variable has a "!"
+ ***** Processing: clauseVariableList[Sodium_Hypochlorite][Fever] = -1
+ ----- INFO: Located Fever(0) in the variable list.
+ ----- INFO: Copying from variable list
+ ***** Processing: clauseVariableList[Sodium_Hypochlorite][IrritatedBurnedSkin] = -1
+ ----- INFO: Located IrritatedBurnedSkin(-1) in the variable list.
+Does the patient have the following symptom?
+   IrritatedBurnedSkin
+
+  Yes
+  No
+
+Response: 
+
+ You answered: "No"
+Low_Blood_Pressure: 0
+!Holes_In_The_Skin: 1
+!Difficulty_Breathing: 1
+Blisters: 0
+!Fever: 1
+IrritatedBurnedSkin: 0
+
+***** You have NOT been poisoned by: Sodium_Hypochlorite Poison *****
+Searching for next potential poison...
+ ***** Processing: clauseVariableList[Ultraviolet_Radiation][Low_Blood_Pressure] = -1
+ ----- INFO: Located Low_Blood_Pressure(0) in the variable list.
+ ----- INFO: Copying from variable list
+ ----- INFO: Current variable has a "!"
+ ***** Processing: clauseVariableList[Ultraviolet_Radiation][Holes_In_The_Skin] = -1
+ ----- INFO: Located Holes_In_The_Skin(0) in the variable list.
+ ----- INFO: Copying from variable list
+ ----- INFO: Current variable has a "!"
+ ***** Processing: clauseVariableList[Ultraviolet_Radiation][Difficulty_Breathing] = -1
+ ----- INFO: Located Difficulty_Breathing(0) in the variable list.
+ ----- INFO: Copying from variable list
+ ----- INFO: Current variable has a "!"
+ ***** Processing: clauseVariableList[Ultraviolet_Radiation][Blisters] = -1
+ ----- INFO: Located Blisters(0) in the variable list.
+ ----- INFO: Copying from variable list
+ ***** Processing: clauseVariableList[Ultraviolet_Radiation][Peeling] = -1
+ ----- INFO: Located Peeling(-1) in the variable list.
+Does the patient have the following symptom?
+   Peeling
+
+  Yes
+  No
+
+Response: 
+
+ You answered: "No"
+Low_Blood_Pressure: 0
+!Holes_In_The_Skin: 1
+!Difficulty_Breathing: 1
+!Blisters: 1
+Peeling: 0
+
+***** You have NOT been poisoned by: Ultraviolet_Radiation Poison *****
+Searching for next potential poison...
+ ***** Processing: clauseVariableList[Sting_Ray][Animal_Bite/Sting] = -1
+ ----- INFO: Located Animal_Bite/Sting in the conclusion list. (a non leaf conclusion)
+ ***** Processing: clauseVariableList[Sting_Ray][Collapse] = -1
+ ----- INFO: Located Collapse(-1) in the variable list.
+Does the patient have the following symptom?
+   Collapse
+
+  Yes
+  No
+
+Response: 
+
+ You answered: "No"
+ ***** Processing: clauseVariableList[Sting_Ray][Sweating] = -1
+ ----- INFO: Located Sweating(-1) in the variable list.
+Does the patient have the following symptom?
+   Sweating
+
+  Yes
+  No
+
+Response: 
+
+ You answered: "No"
+ ----- INFO: Current variable has a "!"
+ ***** Processing: clauseVariableList[Animal_Bite/Sting][Low_Blood_Pressure] = -1
+ ----- INFO: Located Low_Blood_Pressure(0) in the variable list.
+ ----- INFO: Copying from variable list
+ ***** Processing: clauseVariableList[Animal_Bite/Sting][Vomiting_(NonBlood)] = -1
+ ----- INFO: Located Vomiting_(NonBlood)(-1) in the variable list.
+Does the patient have the following symptom?
+   Vomiting_(NonBlood)
+
+  Yes
+  No
+
+Response: 
+
+ You answered: "Yes"
+ ***** Processing: clauseVariableList[Animal_Bite/Sting][BiteSting] = -1
+ ----- INFO: Located BiteSting(-1) in the variable list.
+Does the patient have the following symptom?
+   BiteSting
+
+  Yes
+  No
+
+Response: 
+
+ You answered: "Yes"
+Animal_Bite/Sting: 1
+Collapse: 0
+Sweating: 0
+
+***** You have NOT been poisoned by: Sting_Ray Poison *****
+Searching for next potential poison...
+ ***** Processing: clauseVariableList[Pufferfish][Animal_Bite/Sting] = 1
+ ***** Processing: clauseVariableList[Pufferfish][Collapse] = -1
+ ----- INFO: Located Collapse(0) in the variable list.
+ ----- INFO: Copying from variable list
+ ----- INFO: Current variable has a "!"
+ ***** Processing: clauseVariableList[Pufferfish][Sweating] = -1
+ ----- INFO: Located Sweating(0) in the variable list.
+ ----- INFO: Copying from variable list
+ ***** Processing: clauseVariableList[Pufferfish][Diarrhea] = -1
+ ----- INFO: Located Diarrhea(-1) in the variable list.
+Does the patient have the following symptom?
+   Diarrhea
+
+  Yes
+  No
+
+Response: 
+
+ You answered: "No"
+Animal_Bite/Sting: 1
+Collapse: 0
+!Sweating: 1
+Diarrhea: 0
+
+***** You have NOT been poisoned by: Pufferfish Poison *****
+Searching for next potential poison...
+ ***** Processing: clauseVariableList[Snake][Animal_Bite/Sting] = 1
+ ----- INFO: Current variable has a "!"
+ ***** Processing: clauseVariableList[Snake][Collapse] = -1
+ ----- INFO: Located Collapse(0) in the variable list.
+ ----- INFO: Copying from variable list
+ ***** Processing: clauseVariableList[Snake][Numbness] = -1
+ ----- INFO: Located Numbness(-1) in the variable list.
+Does the patient have the following symptom?
+   Numbness
+
+  Yes
+  No
+
+Response: 
+
+ You answered: "Yes"
+Animal_Bite/Sting: 1
+!Collapse: 1
+Numbness: 1
+
+ ***** Processing: clauseVariableList[Spider][Animal_Bite/Sting] = 1
+ ----- INFO: Current variable has a "!"
+ ***** Processing: clauseVariableList[Spider][Collapse] = -1
+ ----- INFO: Located Collapse(0) in the variable list.
+ ----- INFO: Copying from variable list
+ ----- INFO: Current variable has a "!"
+ ***** Processing: clauseVariableList[Spider][Numbness] = -1
+ ----- INFO: Located Numbness(1) in the variable list.
+ ----- INFO: Copying from variable list
+ ***** Processing: clauseVariableList[Spider][RapidHeartRate] = -1
+ ----- INFO: Located RapidHeartRate(-1) in the variable list.
+Does the patient have the following symptom?
+   RapidHeartRate
+
+  Yes
+  No
+
+Response: 
+
+ You answered: "No"
+Animal_Bite/Sting: 1
+!Collapse: 1
+!Numbness: 0
+RapidHeartRate: 0
+
+***** You have NOT been poisoned by: Spider Poison *****
+Searching for next potential poison...
+ ***** Processing: clauseVariableList[Lead][Metal/Metaloid] = -1
+ ----- INFO: Located Metal/Metaloid in the conclusion list. (a non leaf conclusion)
+ ***** Processing: clauseVariableList[Lead][Constipation] = -1
+ ----- INFO: Located Constipation(-1) in the variable list.
+Does the patient have the following symptom?
+   Constipation
+
+  Yes
+  No
+
+Response: 
+
+ You answered: "No"
+ ----- INFO: Current variable has a "!"
+ ***** Processing: clauseVariableList[Metal/Metaloid][BiteSting] = -1
+ ----- INFO: Located BiteSting(1) in the variable list.
+ ----- INFO: Copying from variable list
+ ***** Processing: clauseVariableList[Metal/Metaloid][Anemia] = -1
+ ----- INFO: Located Anemia(-1) in the variable list.
+Does the patient have the following symptom?
+   Anemia
+
+  Yes
+  No
+
+Response: 
+
+ You answered: "No"
+Metal/Metaloid: 0
+Constipation: 0
+
+***** You have NOT been poisoned by: Lead Poison *****
+Searching for next potential poison...
+ ***** Processing: clauseVariableList[Copper][Metal/Metaloid] = 0
+ ----- INFO: Current variable has a "!"
+ ***** Processing: clauseVariableList[Copper][Constipation] = -1
+ ----- INFO: Located Constipation(0) in the variable list.
+ ----- INFO: Copying from variable list
+ ***** Processing: clauseVariableList[Copper][YellowSkin] = -1
+ ----- INFO: Located YellowSkin(-1) in the variable list.
+Does the patient have the following symptom?
+   YellowSkin
+
+  Yes
+  No
+
+Response: 
+
+ You answered: "No"
+Metal/Metaloid: 0
+!Constipation: 1
+YellowSkin: 0
+
+***** You have NOT been poisoned by: Copper Poison *****
+Searching for next potential poison...
+ ***** Processing: clauseVariableList[Arsenic][Metal/Metaloid] = 0
+ ----- INFO: Current variable has a "!"
+ ***** Processing: clauseVariableList[Arsenic][Constipation] = -1
+ ----- INFO: Located Constipation(0) in the variable list.
+ ----- INFO: Copying from variable list
+ ----- INFO: Current variable has a "!"
+ ***** Processing: clauseVariableList[Arsenic][YellowSkin] = -1
+ ----- INFO: Located YellowSkin(0) in the variable list.
+ ----- INFO: Copying from variable list
+ ***** Processing: clauseVariableList[Arsenic][ThickenedSkin] = -1
+ ----- INFO: Located ThickenedSkin(-1) in the variable list.
+Does the patient have the following symptom?
+   ThickenedSkin
+
+  Yes
+  No
+
+Response: 
+
+ You answered: "No"
+Metal/Metaloid: 0
+!Constipation: 1
+!YellowSkin: 1
+ThickenedSkin: 0
+
+***** You have NOT been poisoned by: Arsenic Poison *****
+Searching for next potential poison...
+ ----- INFO: Current variable has a "!"
+ ***** Processing: clauseVariableList[Ammonia][Low_Blood_Pressure] = -1
+ ----- INFO: Located Low_Blood_Pressure(0) in the variable list.
+ ----- INFO: Copying from variable list
+ ----- INFO: Current variable has a "!"
+ ***** Processing: clauseVariableList[Ammonia][Vomiting_(NonBlood)] = -1
+ ----- INFO: Located Vomiting_(NonBlood)(1) in the variable list.
+ ----- INFO: Copying from variable list
+ ----- INFO: Current variable has a "!"
+ ***** Processing: clauseVariableList[Ammonia][BiteSting] = -1
+ ----- INFO: Located BiteSting(1) in the variable list.
+ ----- INFO: Copying from variable list
+ ----- INFO: Current variable has a "!"
+ ***** Processing: clauseVariableList[Ammonia][Anemia] = -1
+ ----- INFO: Located Anemia(0) in the variable list.
+ ----- INFO: Copying from variable list
+ ***** Processing: clauseVariableList[Ammonia][BlueLipsFingernails] = -1
+ ----- INFO: Located BlueLipsFingernails(0) in the variable list.
+ ----- INFO: Copying from variable list
+ ***** Processing: clauseVariableList[Ammonia][LipsSwelling] = -1
+ ----- INFO: Located LipsSwelling(-1) in the variable list.
+Does the patient have the following symptom?
+   LipsSwelling
+
+  Yes
+  No
+
+Response: 
+
+ You answered: "No"
+!Low_Blood_Pressure: 1
+!Vomiting_(NonBlood): 0
+!BiteSting: 0
+!Anemia: 1
+BlueLipsFingernails: 0
+LipsSwelling: 0
+
+***** You have NOT been poisoned by: Ammonia Poison *****
+Searching for next potential poison...
+ ----- INFO: Current variable has a "!"
+ ***** Processing: clauseVariableList[Para_Aminobenzoic][BiteSting] = -1
+ ----- INFO: Located BiteSting(1) in the variable list.
+ ----- INFO: Copying from variable list
+ ----- INFO: Current variable has a "!"
+ ***** Processing: clauseVariableList[Para_Aminobenzoic][Anemia] = -1
+ ----- INFO: Located Anemia(0) in the variable list.
+ ----- INFO: Copying from variable list
+ ----- INFO: Current variable has a "!"
+ ***** Processing: clauseVariableList[Para_Aminobenzoic][BlueLipsFingernails] = -1
+ ----- INFO: Located BlueLipsFingernails(0) in the variable list.
+ ----- INFO: Copying from variable list
+ ***** Processing: clauseVariableList[Para_Aminobenzoic][NonLinearRash] = -1
+ ----- INFO: Located NonLinearRash(-1) in the variable list.
+Does the patient have the following symptom?
+   NonLinearRash
+
+  Yes
+  No
+
+Response: 
+
+ You answered: "No"
+ ***** Processing: clauseVariableList[Para_Aminobenzoic][SlowedBreathing] = -1
+ ----- INFO: Located SlowedBreathing(-1) in the variable list.
+Does the patient have the following symptom?
+   SlowedBreathing
+
+  Yes
+  No
+
+Response: 
+
+ You answered: "No"
+!BiteSting: 0
+!Anemia: 1
+!BlueLipsFingernails: 1
+NonLinearRash: 0
+SlowedBreathing: 0
+
+***** You have NOT been poisoned by: Para_Aminobenzoic Poison *****
+Searching for next potential poison...
+ ----- INFO: Current variable has a "!"
+ ***** Processing: clauseVariableList[Cyanide][Low_Blood_Pressure] = -1
+ ----- INFO: Located Low_Blood_Pressure(0) in the variable list.
+ ----- INFO: Copying from variable list
+ ----- INFO: Current variable has a "!"
+ ***** Processing: clauseVariableList[Cyanide][Vomiting_(NonBlood)] = -1
+ ----- INFO: Located Vomiting_(NonBlood)(1) in the variable list.
+ ----- INFO: Copying from variable list
+ ***** Processing: clauseVariableList[Cyanide][Altered_Heart_Rate] = -1
+ ----- INFO: Located Altered_Heart_Rate(-1) in the variable list.
+Does the patient have the following symptom?
+   Altered_Heart_Rate
+
+  Yes
+  No
+
+Response: 
+
+ You answered: "No"
+ ***** Processing: clauseVariableList[Cyanide][PinkCherryRedSkin] = -1
+ ----- INFO: Located PinkCherryRedSkin(-1) in the variable list.
+Does the patient have the following symptom?
+   PinkCherryRedSkin
+
+  Yes
+  No
+
+Response: 
+
+ You answered: "No"
+!Low_Blood_Pressure: 1
+!Vomiting_(NonBlood): 0
+Altered_Heart_Rate: 0
+PinkCherryRedSkin: 0
+
+***** You have NOT been poisoned by: Cyanide Poison *****
+Searching for next potential poison...
+ ***** Processing: clauseVariableList[Poison_Oak][Poisonous_Plant] = -1
+ ----- INFO: Located Poisonous_Plant in the conclusion list. (a non leaf conclusion)
+ ***** Processing: clauseVariableList[Poison_Oak][Linear_Red_Rash] = -1
+ ----- INFO: Located Linear_Red_Rash(-1) in the variable list.
+Does the patient have the following symptom?
+   Linear_Red_Rash
+
+  Yes
+  No
+
+Response: 
+
+ You answered: "No"
+ ***** Processing: clauseVariableList[Poison_Oak][Skin_Irritated_Swelling] = -1
+ ----- INFO: Located Skin_Irritated_Swelling(-1) in the variable list.
+Does the patient have the following symptom?
+   Skin_Irritated_Swelling
+
+  Yes
+  No
+
+Response: 
+
+ You answered: "No"
+ ----- INFO: Current variable has a "!"
+ ***** Processing: clauseVariableList[Poisonous_Plant][Low_Blood_Pressure] = -1
+ ----- INFO: Located Low_Blood_Pressure(0) in the variable list.
+ ----- INFO: Copying from variable list
+ ----- INFO: Current variable has a "!"
+ ***** Processing: clauseVariableList[Poisonous_Plant][Vomiting_(NonBlood)] = -1
+ ----- INFO: Located Vomiting_(NonBlood)(1) in the variable list.
+ ----- INFO: Copying from variable list
+ ----- INFO: Current variable has a "!"
+ ***** Processing: clauseVariableList[Poisonous_Plant][Altered_Heart_Rate] = -1
+ ----- INFO: Located Altered_Heart_Rate(0) in the variable list.
+ ----- INFO: Copying from variable list
+Poisonous_Plant: 0
+Linear_Red_Rash: 0
+Skin_Irritated_Swelling: 0
+
+***** You have NOT been poisoned by: Poison_Oak Poison *****
+Searching for next potential poison...
+ ***** Processing: clauseVariableList[Poison_Ivy][Poisonous_Plant] = 0
+ ----- INFO: Current variable has a "!"
+ ***** Processing: clauseVariableList[Poison_Ivy][Linear_Red_Rash] = -1
+ ----- INFO: Located Linear_Red_Rash(0) in the variable list.
+ ----- INFO: Copying from variable list
+ ***** Processing: clauseVariableList[Poison_Ivy][Light_Red_Patches] = -1
+ ----- INFO: Located Light_Red_Patches(-1) in the variable list.
+Does the patient have the following symptom?
+   Light_Red_Patches
+
+  Yes
+  No
+
+Response: 
+
+ You answered: "No"
+Poisonous_Plant: 0
+!Linear_Red_Rash: 1
+Light_Red_Patches: 0
+
+***** You have NOT been poisoned by: Poison_Ivy Poison *****
+Searching for next potential poison...
+ ***** Processing: clauseVariableList[Poison_Sumac][Poisonous_Plant] = 0
+ ----- INFO: Current variable has a "!"
+ ***** Processing: clauseVariableList[Poison_Sumac][Linear_Red_Rash] = -1
+ ----- INFO: Located Linear_Red_Rash(0) in the variable list.
+ ----- INFO: Copying from variable list
+ ----- INFO: Current variable has a "!"
+ ***** Processing: clauseVariableList[Poison_Sumac][Light_Red_Patches] = -1
+ ----- INFO: Located Light_Red_Patches(0) in the variable list.
+ ----- INFO: Copying from variable list
+ ***** Processing: clauseVariableList[Poison_Sumac][Large_Fluid_Filled_Blisters] = -1
+ ----- INFO: Located Large_Fluid_Filled_Blisters(-1) in the variable list.
+Does the patient have the following symptom?
+   Large_Fluid_Filled_Blisters
+
+  Yes
+  No
+
+Response: 
+
+ You answered: "No"
+Poisonous_Plant: 0
+!Linear_Red_Rash: 1
+!Light_Red_Patches: 1
+Large_Fluid_Filled_Blisters: 0
+
+***** You have NOT been poisoned by: Poison_Sumac Poison *****
+Searching for next potential poison...
+***** Diagnosis: None *****
+ ****************************************************
+ ***** Diagnosis: Snake Poison
+
+
+***********************************
+***** Processing FC-Rules.txt *****
+***********************************
+Extracted 29 "IF" variables. (variables)
+Extracted 49 "THEN" variables. (conclusions)
+
+FC-Variable List:
+1 Acetone
+2 Exposure_<_30_Minutes
+3 Ammonia
+4 Swallowed
+5 Ammonium_Hydroxide
+6 Inhaled
+7 Skin
+8 Arsenic
+9 Chlorine
+10 Copper
+11 Cyanide
+12 Lead
+13 HighLevel
+14 Para_Aminobenzoic
+15 Pufferfish
+16 Ingested_<_30_Minutes
+17 Snake
+18 Sodium_Borate
+19 Sodium_Carbonate
+20 Sodium_Hypochlorite
+21 Sodium_Phosphate
+22 Sodium_Hydroxide
+23 Spider
+24 Sting_Ray
+25 Ultraviolet_Radiation
+26 Poison_Oak
+27 Sulfuric_Acid
+28 Poison_Ivy
+29 Poison_Sumac
+
+Treatments: Gastric_Lavage & 
+Treatments: Measure/Monitor_Vital_Signs & Administer_Activated_Charcoal & Administer_Oxygen & 
+Treatments: Measure/Monitor_Vital_Signs & Provide_Breathing_Support & Administer_IV & 
+Treatments: Flush_Eyes/Skin & 
+Treatments: Admit_To_Hospital & Measure/Monitor_Vital_Signs & Administer_IV & 
+Treatments: Provide_Breathing_Support & Bronchoscopy & Administer_Oxygen & 
+Treatments: Skin_Debridement & Wash_Skin & 
+Treatments: Endoscopy & 
+Treatments: Chelation_Therapy & HyperTension_Medication & Measure/Monitor_Vital_Signs & Oxygen & Sauna & 
+Treatments: Measure/Monitor_Vital_Signs & Administer_IV & Admit_To_Hospital & 
+Treatments: Gastric_Lavage & 
+Treatments: Administer_Activated_Charcoal & Endoscopy & 
+Treatments: Provide_Breathing_Support & Bronchoscopy & Oxygen & 
+Treatments: Skin_Debridement & Wash_Skin & 
+Treatments: Gastric_Lavage & 
+Treatments: Measure/Monitor_Vital_Signs & Chelation_Therapy & Administer_Activated_Charcoal & HyperTension_Medication & Sauna & 
+Treatments: Gastric_Lavage & 
+Treatments: Measure/Monitor_Vital_Signs & Administer_Antidote & 
+Treatments: Gastric_Lavage & Bowel_Irrigation & 
+Treatments: Measure/Monitor_Vital_Signs & Blood_Lead_Test & Chelation_Therapy & Sauna & HyperTension_Medication & Complete_Blood_Workup & 
+Treatments: Measure/Monitor_Vital_Signs & Blood_Lead_Test & 
+Treatments: Gastric_Lavage & 
+Treatments: Measure/Monitor_Vital_Signs & Administer_Activated_Charcoal & Provide_Breathing_Support & Administer_IV & 
+Treatments: Gastric_Lavage & 
+Treatments: Measure/Monitor_Vital_Signs & Provide_Breathing_Support & 
+Treatments: Administer_Antivenom_If_Necessary & Measure/Monitor_Vital_Signs & Tetanus_Immunization & 
+Treatments: Gastric_Lavage & 
+Treatments: Dialysis & Administer_IV & Measure/Monitor_Vital_Signs & 
+Treatments: Endoscopy & Administer_IV & Measure/Monitor_Vital_Signs & Oxygen & X-Rays_Of_Chest_&_Abdomen & 
+Treatments: Measure/Monitor_Vital_Signs & Admit_To_Hospital & 
+Treatments: Provide_Breathing_Support & Oxygen & Bronchoscopy & 
+Treatments: Skin_Debridement & Wash_Skin & 
+Treatments: Gastric_Lavage & 
+Treatments: Endoscopy & Administer_IV & 
+Treatments: Measure/Monitor_Vital_Signs & 
+Treatments: Provide_Breathing_Support & Oxygen & Bronchoscopy & 
+Treatments: Skin_Debridement & Wash_Skin & 
+Treatments: Endoscopy & Administer_IV & 
+Treatments: Measure/Monitor_Vital_Signs & 
+Treatments: Provide_Breathing_Support & Oxygen & Bronchoscopy & 
+Treatments: Skin_Debridement & Wash_Skin & 
+Treatments: Endoscopy & Administer_IV & 
+Treatments: Soap_And_Water & Acetaminophen & Antibiotics & Cold_Compresses & Diphenhydramine_Every_6_Hours & Tetanus_Immunization & 
+Treatments: Provide_Breathing_Support & Administer_IV & Measure/Monitor_Vital_Signs & Soap_And_Water & 
+Treatments: Administer_Fluids & Apply_Aloe_Vera & Apply_Lidocaine & 
+Treatments: Acetaminophen & Apply_HydroCortisone & 
+Treatments: Provide_Breathing_Support & Bronchoscopy & Endoscopy & Administer_IV & Measure/Monitor_Vital_Signs & Milk_Of_Magnesia & Oxygen & Skin_Debridement & Wash_Skin & 
+Treatments: Acetaminophen & Apply_HydroCortisone & 
+Treatments: Acetaminophen & Apply_HydroCortisone & 
+
+
+Non Leaf Conclusion List:
+
+Clause 1:Acetone Exposure_<_30_Minutes 
+Clause 2:Acetone 
+Clause 3:Ammonia Swallowed 
+Clause 4:Ammonia 
+Clause 5:Ammonium_Hydroxide 
+Clause 6:Ammonium_Hydroxide Inhaled 
+Clause 7:Ammonium_Hydroxide Skin 
+Clause 8:Ammonium_Hydroxide Swallowed 
+Clause 9:Arsenic 
+Clause 10:Chlorine 
+Clause 11:Chlorine Swallowed Exposure_<_30_Minutes 
+Clause 12:Chlorine Swallowed 
+Clause 13:Chlorine Inhaled 
+Clause 14:Chlorine Skin 
+Clause 15:Copper Exposure_<_30_Minutes 
+Clause 16:Copper !Exposure_<_30_Minutes 
+Clause 17:Cyanide Exposure_<_30_Minutes 
+Clause 18:Cyanide !Exposure_<_30_Minutes 
+Clause 19:Lead HighLevel Exposure_<_30_Minutes 
+Clause 20:Lead HighLevel 
+Clause 21:Lead !HighLevel 
+Clause 22:Para_Aminobenzoic Exposure_<_30_Minutes 
+Clause 23:Para_Aminobenzoic !Exposure_<_30_Minutes 
+Clause 24:Pufferfish Ingested_<_30_Minutes 
+Clause 25:Pufferfish !Ingested_<_30_Minutes 
+Clause 26:Snake 
+Clause 27:Sodium_Borate Ingested_<_30_Minutes 
+Clause 28:Sodium_Borate 
+Clause 29:Sodium_Carbonate 
+Clause 30:Sodium_Hypochlorite 
+Clause 31:Sodium_Hypochlorite Inhaled 
+Clause 32:Sodium_Hypochlorite Skin 
+Clause 33:Sodium_Hypochlorite !Inhaled !Skin Ingested_<_30_Minutes 
+Clause 34:Sodium_Hypochlorite !Inhaled !Skin 
+Clause 35:Sodium_Phosphate 
+Clause 36:Sodium_Phosphate Inhaled 
+Clause 37:Sodium_Phosphate Skin 
+Clause 38:Sodium_Phosphate !Inhaled !Skin 
+Clause 39:Sodium_Hydroxide 
+Clause 40:Sodium_Hydroxide Inhaled 
+Clause 41:Sodium_Hydroxide !Inhaled Skin 
+Clause 42:Sodium_Hydroxide !Inhaled !Skin !Ingested_<_30_Minutes 
+Clause 43:Spider 
+Clause 44:Sting_Ray 
+Clause 45:Ultraviolet_Radiation 
+Clause 46:Poison_Oak 
+Clause 47:Sulfuric_Acid 
+Clause 48:Poison_Ivy 
+Clause 49:Poison_Sumac 
+
+
+ ----- INFO: Found: Snake in the variable list at index: 16
+ ----- INFO: Found: Snake at Statement: 26 --- Clause: 0
+ ***** Deal with Snake
+ ----- INFO: Retreived data from variable list concerning: Snake: 1
+ ----- INFO: Treatment Check: 
+   clauseVariableList[25][0] = 1
+ *********** Size of queue: 1
+
+ ****************************************************
+ ***** Treatment(s) *********************************
+   Administer_Antivenom_If_Necessary
+   Measure/Monitor_Vital_Signs
+   Tetanus_Immunization
