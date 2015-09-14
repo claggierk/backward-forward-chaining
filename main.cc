@@ -37,6 +37,7 @@ int main(int argc, char* argv[])
 		// ***** forward chaining ... recommend treatment
 		// *************************************************************
 		ForwardChaining ForwardChainingInstance("FC-Rules.txt");
+		// ForwardChainingInstance.Trigger("Arsenic");
 		ForwardChainingInstance.Trigger(BackwardChainingInstance.PoisonDiagnosed.name);
 	}
 	catch(string message)
